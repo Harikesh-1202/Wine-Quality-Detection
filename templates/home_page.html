@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>CORP RECOMEDOR SYSTEM</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wine Quality Detection</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1 style="text-align: center; padding-top: 30px;">Wine Quality Detection</h1>
+
+    <div class="o">
+
+      <form action="http://127.0.0.1:8001/predict" method="POST">
+        <div class="input-container">
+          <input type="text" placeholder="Fixed Acidity..." name="param1" />
+
+          <input type="text" placeholder="Volatile Acidity..." name="param2" />
+
+          <input type="text" placeholder="Citric Acid..." name="param3" />
+         
+        </div>
+
+        <div class="input-container">
+          <input type="text" placeholder="Residual Sugar..." name="param4" />
+
+          <input type="text" placeholder="Chlorides..." name="param5" />
+
+          <input type="text" placeholder="Free SulfurDioxide..." name="param6" />
+
+        </div>
+        <div class="input-container">
+
+          <input type="text" placeholder="Total SulfurDioxide..." name="param7" />
+
+          <input type="text" placeholder="Density..." name="param8" />
+
+          <input type="text" placeholder="pH..." name="param9" />
+
+        </div>
+        
+        <div class="input-container">
+          <input type="text" placeholder="Sulphates..." name="param10" />
+
+          <input type="text" placeholder="Alcohol..." name="param11" />
+        </div>
+        
+        <input class="btn" type="submit" value="Detect Quality" />
+    </form>
+  </div>
+  </body>
+</html>
